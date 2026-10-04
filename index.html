@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#7a5637">
+  <title>Cascadia Rolling Counter</title>
+  <link rel="icon" type="image/png" href="icons/pinecone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cascadia Rolling</h1>
+    <div class="actions">
+      <button id="more" type="button" aria-pressed="false" aria-label="Show the 4, 5 and 6 buttons">+</button>
+      <button id="show-history" type="button">History</button>
+      <button id="reset" type="button">Reset</button>
+    </div>
+  </header>
+  <main id="rows"></main>
+  <dialog id="history" aria-labelledby="history-title">
+    <div class="history-head">
+      <h2 id="history-title">History</h2>
+      <form method="dialog"><button type="submit">Close</button></form>
+    </div>
+    <p id="history-empty">No changes since the last reset.</p>
+    <ol id="history-list"></ol>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
